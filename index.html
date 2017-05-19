@@ -1,5 +1,5 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat"> 
-<html dir="ltr" lang="nl-be" class="no-js" prefix="og: http://ogp.me/ns#">
+<!DOCTYPE html> 
+<html dir="ltr" lang="nl-be">
   <head>
     <!-- Character encoding -->
 	  <meta charset="UTF-8"> 
@@ -25,10 +25,7 @@
     <meta property="og:image:height" content="129">
     <!-- humans.txt -->
     <link rel="author" type="text/plain" href="/humans.txt">
-     <!-- DNS prefech for CDN -->
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="//code.jquery.com">
-    <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+
     <!-- Icons -->
     <!-- http://realfavicongenerator.net/ -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
@@ -44,21 +41,211 @@
     <!-- Stylesheets: Vendors -->
     <link rel="stylesheet" media="all" href="vendor/normalize/normalize.css">
     <!-- Stylesheets: App -->
+    <link rel="stylesheet" media="all" href="css/grid.css">
     <link rel="stylesheet" media="all" href="css/fonts.css">
     <link rel="stylesheet" media="all" href="css/typography.css">
     <link rel="stylesheet" media="all" href="css/main.css">
-    <!-- Modernizr: feature detection -->
-    <script src="vendor/modernizr/modernizr.min.js"></script>
-  </head>
-
-  <body>
-    <div class="intro">
-      <h1>GDM - HTML5 Template</h1>
-      <p>We educate future talents in Design for Print and Non-Print, Web- and App Development, Audio and Video Production, 2D- and 3D Animations, Printing and Packaging and the whole Management of those workflows!</p>
+</head>
+<body>
+    <div class="grid__wrapper backgroundcolor">  
+      <header class="header">
+        <div class="background">
+          <div class="grid__column-8">
+              <img class="headerlogo" src="assets/images/logowijzijn.svg" alt="logo Compagnie">
+              <!-- logo plus achtergrondkleur! wrapper? -->
+              <p class="grid__column-4">Compagnie is een webdesignagency opgericht door 4 vrienden. Wij zijn in staat om al jullie projecten te realiseren.  
+              <br> Take a look around!
+              </p>
+          </div>
+        </div>
+      </header>
     </div>
-    <!-- Scripts: Vendors -->
-      <!-- For example: jQuery, lodash, handlebars, ... -->
-    <!-- Scripts: App -->
-    <script src="js/main.js"></script>
-  </body>
+    
+    <div class="grid__wrapper main-navigation" >
+        <div class="grid__container">
+            <div class="grid__row">
+                <div class="grid__column-12">   
+                    <nav>   
+                        <ul id="navigatie">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#overons">Over ons</a></li>
+                            <li><a href="index.html" role="btn" class="company_logo">Compagnie</a></li>
+                            <li><a href="index.html#portfolio">Portfolio</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>   
+                    </nav>                         
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    
+        <div class="grid__container">
+            
+            <div class="grid__row">
+                <div class="grid__column-12">
+                    <h1 id="overons">Over ons</h1>
+                    <h2>Onze service</h2>
+                </div>
+            </div>
+         
+            <div class="grid__row">      
+                <div class="grid__column-12">
+                    <div class="tekstmidden">
+                        <p id="tekstservice"> 
+                        Compagnie is gepassioneerd bezig met webdesign sinds 2002. Dankzij het sterke teamwerk van onze 4 medewerkers met jarenlange ervaring, kunt u rekenen op een pixelperfect design.
+                            <br><br>
+                            Ons ontwerpbureau staat steeds klaar voor nieuwe en spannende uitdagingen. Met veel aandacht bouwt ons team uw gebruikvriendelijke website.
+                            <br>
+                            Bij ons kunt u terecht voor webdesign, grafisch-ontwerp, logo-design, webdevelopment, drukwerk en meer...
+                            <br><br>
+                            U vindt Compagnie terug in Ronse. Kom eens langs!</p>
+                    </div>
+                </div>      
+            </div>  
+            
+            <div class="grid__row"> 
+                    <div class="grid__column-12">    
+                        <h2>Ons team</h2>
+                    </div>
+            </div>
+            <div class="grid__row teamfotos">
+                    <div class="grid__column-12 fotoslinks"> 
+                        <img src="assets/images/cato.jpg" alt="Mathilde Waeterloos">
+                        <p>Mathilde Waeterloos</p>
+                    </div>
+                    <div class="grid__column-12 fotosrechts"> 
+                        <img src="assets/images/cato.jpg" alt="Cato Waeterloos">
+                        <p>Cato Waeterloos</p>
+                    </div>
+                    <div class="grid__column-12 fotoslinks"> 
+                        <img src="assets/images/cato.jpg" alt="Céline Vannieuwenhuyse">
+                        <p>Céline Vannieuwenhuyse</p>
+                    </div>
+                    <div class="grid__column-12 fotosrechts"> 
+                        <img src="assets/images/cato.jpg" alt="Frank Waeterloos">
+                        <p>Frank Waeterloos</p>
+                    </div>               
+            </div>
+            
+
+            <div class="grid__row">
+                <div class="grid__column-12">
+                    <h1 id="portfolio">Portfolio</h1>
+                </div>
+                <div class="grid__column-10 imagesportfolio">
+                    <div class="grid__column-4">
+                        <a href="detailpagina.html" targer="blank"><img src="./assets/images/compagnielogo.jpg" alt="Logo Compagnie"></a>
+                    </div>  
+                    <div class="grid__column-4">  
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/opslotlogo.jpg" alt="Logo Op Slot"></a>
+                    </div>
+                    <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/posteroverjezelf.jpg" alt="Poster Mathilde"></a>
+                    </div>
+                    <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/waeterlooslogo.jpg" alt="Logo Waeterloos"></a>
+                    </div>
+                    <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/stramien2.jpg" alt="Artikel Vijverplanten"></a>
+                    </div>
+                    <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/mwlogo.jpg" alt="Logo MW"></a>
+                    </div>
+                     <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/memory.jpg" alt="Memory doosontwerp"></a>
+                    </div>
+                     <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/jellyfishlogo.jpg" alt="Logo JelLyfish/Hippocampus "></a>
+                    </div>
+                     <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/dierenlogos.jpg" alt="Logo's dieren'"></a>
+                    </div>
+                     <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/musesite.jpg" alt="Website Muse"></a>
+                    </div>
+                     <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/letstalkdesign.jpg" alt="Poster Let's talk design'"></a>
+                    </div>
+                     <div class="grid__column-4">
+                         <a href="detailpagina.html" target="blank"><img src="./assets/images/hondafiche.jpg" alt="Fiche Honda"></a>
+                    </div>
+                
+                
+                </div>
+            </div>   
+        
+        <div class="grid__row"> 
+                    <h1 id="contact">Contact</h1>
+                <div class="gegevenscontact grid__column-12">
+                        <p>Overal en Nergens, 1B <br>
+                        9600 Overal <br>
+                        België
+                        <br> <br>
+                        + 32478/66 61 23
+                        <br> <br>
+                        compagniedesign@hotmail.com
+                        </p>
+                </div>
+        </div>
+        
+        <div class="grid__row rowform">
+             <div class="grid__column-6 vraagform">
+                <p id="contactvraag">Heeft u een vraag? Aarzel niet om ons te contacteren!</p>
+                    <form class="form" action="http://example.com/subscribe.php" method="get">
+                        <p>Naam en familienaam:<br>
+                        <input type="text" name="Naam en familienaam">
+                        </p>
+                        <p>E-mailadres:<br>
+                        <input type="text" name="E-mailadres">
+                        </p>
+                        <p> Bericht:<br>
+                        <input id="inputbericht" type="text" name="E-mailadres">
+                        </p>
+                    </form>
+                <button class="buttonform" type="button"> Verzenden</button>
+             </div> 
+             <div class="grid__column-6" class="iframe">  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35990.25702622822!2d12.489763976958276!3d55.682188516716906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253b929c649ed%3A0xbd1fdce84f817e82!2sFrederiksberg%2C+Denmark!5e0!3m2!1sen!2sbe!4v1494414991608" width="500" height="400" frameborder="0" style="border:0" allowfullscreen>
+                </iframe>
+            </div>         
+        </div>   
+<!-- divcontainer einde !-->
+    </div>
+  
+        
+<!-- footer!-->
+<div class="footer-wrapper">
+		<div class="grid__row">
+			<div class="grid__column-12 footer">
+				<footer class="foot">
+                    <div class="grid__row">
+                        <div class="grid__column-12">
+                            <p id="titelfooter">Compagnie</p>
+                        </div>
+                    </div>
+					<div class="grid__row tekstfooter">
+						<div class="grid__column-4">
+							Overal en Nergens 1B<br>
+                            9600 Overal België
+						</div>
+						<div class="grid__column-4">
+							+ 32666/45 21 23
+						</div>
+						<div class="grid__column-4">
+							<a href="https://www.facebook.com/" target="blank">Facebook.com/Compagnie </a>
+                            <br>
+                            <a href="https://www.instagram.com/"target="blank">Instagram.com/Compagnie </a>
+						</div>
+					</div>
+                    <div class="grid__row tekstfooter">
+                        <div class="grid__column-12">
+                            <p class="copyright">Compagnie © 2017</p>
+                        </div>
+                    </div>
+				</footer>
+			</div>
+		</div>
+</div>
+</body>
 </html>

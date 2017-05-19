@@ -2,27 +2,324 @@
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+
+.backgroundcolor{
+  background-color: Rgb(34,49,62);
+  height:700px;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  background: rgba(26,35,126 ,1) url('../assets/images/home.jpg') no-repeat center center fixed;
-  background-size: cover;
-
-  color: rgba(232,234,246 ,1);
+.header > .background > .grid__column-8 p {
+  color:white;
+  text-align: center;
+  position: relative;
+  left:60%;
+  margin-top: 25px;
+  font-family:"tt_moons_thin_demoitalic";
+  font-size: 20px;
+  word-spacing: 5px;
 }
 
-.intro {
-  width: 90vw;
+.headerlogo {
+  margin-top:120px;
+  margin-left:auto;
+  position:relative;
+  left: 25%;
+}
 
-  padding: 1rem;
-  margin-top: 1rem;
+/* navigatie */
+.main-navigation {
+    display:block;
+    width:100%;
+    background-color: Rgb(34,49,62);
+    height:120px;
+    position: fixed;
+    top:0px;
+    z-index:999;
+    
+}
 
-  background: rgba(41,182,246 ,1);
-  color: rgba(1,87,155 ,1);
+ul#navigatie {
+    padding: 0;
+}
+
+#navigatie li{
+    list-style-type: none;
+    float:left;
+    display: block;
+    width:20%;
+}
+
+#navigatie li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    width: 100%;
+    line-height:100px; 
+    font-family: "tt_moons_thin_demoitalic";
+}
+
+#navigatie li a:hover{
+    font-size: 20px;
+}
+
+a.company_logo {
+    display:block; /* eerst van de a een block-element maken */
+    width: 100%;
+    /* background*/
+    background-image: url(../assets/images/logoo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    /* magic: tekst laten verdwijnen, door deze naar links op te schuiven */
+    overflow:hidden;
+    text-indent:-999px;
+    }
+
+a.company_logo:hover {
+    background-image: url(../assets/images/logooblauw.svg);
+}
+
+
+/*OVER ONS*/
+
+h1 {
+  font-size:70px;
+  font-family: 'Aliens and cows',Sans-serif;
+  color:rgb(63,87,101);
+  text-align: center;
+  padding-top:120px;
+  
+}
+
+h2 {
+  font-size:30px;
+  font-family: 'source sans pro light',Sans-serif;
+  font-variant: small-caps;
+  color:rgb(255,119,0);
+  text-align:center; 
+}
+
+.tekstmidden  {
+  text-align: center;
+  font-family: 'source sans pro',Sans-serif;
+  font-size:18px;
+}
+#tekstservice{
+  text-align: left;
+  margin-left:150px;
+  margin-right: 150px;
+  margin-bottom:50px;
+}
+
+.teamfotos{
+  font-family: "source sans pro";
+  font-size: 20px;
+  margin-top:20px;
+}
+  
+.teamfotos > .fotoslinks > img{
+  height:250px;
+  margin-left:280px;
+}
+
+.teamfotos > .fotoslinks> p {
+  float:right;
+  line-height:230px;
+  margin-right:320px;
+}
+
+.teamfotos > .fotosrechts > img{
+  height:250px;
+  margin-right:280px;
+  float:right;
+}
+
+.teamfotos > .fotosrechts> p {
+  float:left;
+  line-height:230px;
+  margin-left:320px;
+}
+
+
+
+/*PORTFOLIO*/
+
+.imagesportfolio > .grid__column-4 > a > img{
+  height:250px;
+  width:250px;  
+  margin-top:50px;
+}
+
+.imagesportfolio {
+  margin-left:110px;
+}
+.imagesportfolio > .grid__column-4 > a > img:hover{
+ opacity:0.7;
+
+}
+
+/* CONTACT*/
+
+.iframe {
+  float: right;
+}
+
+.gegevenscontact {
+  float:left;
+  margin:0;
+  text-align: center;
+  font-family: 'source sans pro',sans-serif;
+  font-size:18px;
+}
+
+.vraagform {
+  font-family: 'source sans pro', sans-serif;
+  float:left;
+}
+
+.form > p{
+  line-height:30px;
+}
+
+#contactvraag {
+  font-size: 20px;
+}
+
+#inputbericht{
+  width:75%;
+  height:130px;
+}
+
+.rowform{
+  margin-top: 50px;
+  margin-left:60px;
+}
+
+.buttonform {
+    
+    margin-top:20px;
+    background-color: white;
+    border: 2px solid;
+    border-color:rgb(63,87,101);
+    color:rgb(63,87,101);
+    width:230px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Oswald light",sans-serif;
+    text-transform:uppercase;
+    padding:5px;
+    cursor: pointer;
+}
+
+.buttonform:hover{
+  color:rgb(116,201,189);
+  border-color:rgb(116,201,189);
+}
+
+.buttonform:active{
+  color:rgb(255,119,0);
+  border-color:rgb(255,119,0);
+}
+.buttonform:focus{
+  outline:0;
+}
+
+
+/*FOOTER*/
+
+.footer {
+  margin-top:100px;
+  background-color: Rgb(34,49,62);
+  height:200px;
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  width:100%;
+}
+
+#titelfooter{
+  text-align: center;
+  font-family: "Aliens and cows", sans-serif;
+  color: white;
+  font-size:50px;
+  margin:0;
+  margin-bottom:10px;
+}
+
+.tekstfooter, a{
+  font-family:"source sans pro",sans-serif ;
+  text-align: center;
+  color:white;
+  text-decoration: underline;
+  margin:0;
+}
+
+.tekstfooter > .grid__column-4 > a:hover{
+  color:rgb(116,201,189);
+}
+
+footer > .tekstfooter > .grid__column-12 > .copyright {
+  font-variant: small-caps;
+  font-size: 14px;
+  margin-top:20px;
+}
+
+
+
+/*DETAILPAGINA*/
+
+.detailpagina > img {
+  height:600px;
+  margin: 0 auto;
+  display:block;
+}
+
+.broodkruimelpad > a {
+  color:black;
+  text-decoration: underline;
+}
+
+.broodkruimelpad > a:hover{
+  color:rgb(116,201,189);
+}
+
+.broodkruimelpad{
+   font-family: "source sans pro",sans-serif;
+   font-variant: small-caps;
+   font-size:18px;
+   margin-left:90px;
+   margin-top:20px;
+   margin-bottom:0;
+}
+
+.titeldetailpagina {
+  margin-top: 0;
+  padding:0;
+}
+  
+.main-navigationdetailpagina{
+    display:block;
+    width:100%;
+    background-color: Rgb(34,49,62);
+    height:120px;  
+}
+
+.detailswerk{
+  text-align: center;
+  font-family: "source sans pro",sans-serif;
+  font-size:20px;
+}
+
+.footerdetailpagina{
+  margin-top:100px;
+  background-color: Rgb(34,49,62);
+  height:200px;
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  width:100%;
 }

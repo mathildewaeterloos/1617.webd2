@@ -1,1 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@font-face {
+    font-family: 'aliens_and_cowsregular';
+    src: url('../assets/fonts/aliens_and_cows_trial-webfont.woff2') format('woff2'),
+         url('../assets/fonts/aliens_and_cows_trial-webfont.woff') format('woff'),
+         url('../assets/fonts/aliens_and_cows_trial.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_moons_thin_demoitalic';
+    src: url('../assets/fonts/tt-moons-thin-italic-demo-webfont.woff2') format('woff2'),
+         url('../assets/fonts/tt-moons-thin-italic-demo-webfont.woff') format('woff'),
+         url('../assets/fonts/TT-Moons-Thin-Italic-DEMO.otf');
+    font-weight: normal;
+    font-style: normal;
+}

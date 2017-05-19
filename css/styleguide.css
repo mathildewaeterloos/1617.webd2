@@ -1,0 +1,298 @@
+/* 1. BASE: basisstijlen van de HTML-elementen */
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+main.style-tile h1.style-tile,
+aside.style-tile h2.style-tile {
+    border-bottom: 1px solid #666;
+    font-size: 1rem;
+    line-height: 2em;
+    margin-top: 3em;
+}
+
+h1.style-tile,
+h2.style-tile,
+h3.style-tile,
+h4.style-tile,
+h5.style-tile,
+h6.style-tile {
+    font-family: inherit;
+}
+
+article.style-tile p.style-tile,
+footer.style-tile p {
+    font-family: inherit;
+}
+
+body > footer a,
+body > footer a:visited {
+    color: #00F;
+}
+
+table.style-tile {
+    line-height: 2rem;
+    width: 100%
+}
+table.style-tile thead th {
+    border-bottom: 1px solid #666;
+    text-align: left;
+}
+table.style-tile tbody th {
+    text-align: right;
+    width: 1%;
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* 2. COMPONENTS: onderdelen, worden in de algemene lay-out geplaatst */
+
+.colours__colour {
+    background-color: #EEE;
+    border: .25rem solid #FFF;
+    box-shadow: 0 0 1px #000;
+    float: left;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.colours__colour + .colours__colour {
+    margin-left: 1rem;
+}
+
+
+
+/* 3. LAYOUT: algemene lay-out */
+
+header.style-tile,
+main.style-tile,
+footer.style-tile {
+    clear: both;
+    margin: auto;
+    max-width: 60rem;
+}
+header.style-tile,
+footer.style-tile{
+    max-width: 100rem;
+}
+
+
+article.style-tile,
+aside.style-tile {
+    float: left;
+    width: 29rem;
+}
+aside.style-tile {
+    margin-left: 2rem;
+}
+
+
+
+/* 4. styleguide css */
+
+
+/* Typografie */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@font-face {
+    font-family: 'aliens_and_cowsregular';
+    src: url('../assets/fonts/aliens_and_cows_trial-webfont.woff2') format('woff2'),
+         url('../assets/fonts/aliens_and_cows_trial-webfont.woff') format('woff'),
+         url('../assets/fonts/aliens_and_cows_trial.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'tt_moons_thin_demoitalic';
+    src: url('../assets/fonts/tt-moons-thin-italic-demo-webfont.woff2') format('woff2'),
+         url('../assets/fonts/tt-moons-thin-italic-demo-webfont.woff') format('woff'),
+         url('../assets/fonts/TT-Moons-Thin-Italic-DEMO.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.keywords {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:normal;
+    color:Rgb(63,87,101);
+}
+
+article > h1 {
+    font-family: 'Aliens and cows', sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.titlestyle-guide {
+    font-size: 30px;
+    font-family: 'Source sans pro', Sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.style-tile > h2 {
+    font-variant: small-caps;
+    font-size: 30px;
+}
+
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+}
+
+/* Hyperlinks */
+a,
+a:visited {
+    color: Rgb(116,201,189);
+    text-decoration: none;
+}
+article > p > a:hover, 
+td > a:hover{
+    color: Rgb(116,201,189);
+    text-decoration: none;
+    border-bottom: dotted 1px rgb(61,156,191);
+    padding-bottom: 2px;
+}
+
+/* 2. COMPONENTS: onderdelen, worden in de algemene lay-out geplaatst */
+
+/* Knoppen */
+.button {
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    padding: 0.25em 1em;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Aliens and cows';
+
+}
+.button:hover {
+    text-decoration: none;
+    border: solid;
+}
+
+.button--default,
+.button--default:visited {
+    border-color: Rgb(63,87,101);
+    color:Rgb(63,87,101);
+}
+.button--default:hover {
+    border-color:Rgb(116,201,189);
+    color: Rgb(116,201,189);
+    border-width: 1px;
+}
+.button--default:active {
+    border-color:Rgb(255,119,0);
+    color: Rgb(255,119,0);
+}
+
+/* Kleuren */
+.colours__colour--a {
+    background-color: Rgb(34,49,62);
+}
+.colours__colour--b {
+    background-color: Rgb(63,87,101);
+}
+.colours__colour--c {
+    background-color: Rgb(218);
+}
+.colours__colour--d {
+    background-color: Rgb(239,57,0);
+}
+.colours__colour--e {
+    background-color: Rgb(255,119,0);
+}
+.colours__colour--f {
+    background-color: Rgb(116,201,189);
+}
+
+
+/* navigatie */
+.main-navigation {
+    display:block;
+    background-color: Rgb(34,49,62);
+    height:120px;
+    
+}
+ul#navigatie {
+    padding: 0;
+}
+
+#navigatie li{
+    list-style-type: none;
+    float:left;
+    display: block;
+    /*font-family: 'Moons';*/
+    font-family:'TT Moons';
+    text-transform: uppercase;
+    width:20%;
+    
+}
+
+#navigatie li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    line-height:100px;
+   
+}
+
+#navigatie li a:hover{
+    font-size: 18px;
+}
+
+a.company_logo {
+    display:block; /* eerst van de a een block-element maken */
+    width: 100%;
+    /* background*/
+    background-image: url(../assets/images/logoo.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    /* magic: tekst laten verdwijnen, door deze naar links op te schuiven */
+    overflow:hidden;
+    text-indent:-999px;
+    }
+
+a.company_logo:hover {
+    background-image: url(../assets/images/logooblauw.svg);
+}
+
+/*footer*/
+
+#footer ul li{
+list-style-type: none;
+width: 430px;
+background-color: Rgb(34,49,62);
+height: 80px;
+display:block;
+float:left;
+text-align: center;
+font-family: 'source sans pro light', sans-serif;
+font-size: 15px;
+color: white;
+padding-top: 40px;
+margin-top: 50px;
+}
+
+
