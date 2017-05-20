@@ -35,7 +35,7 @@ body{
 /* navigatie */
 .main-navigation {
     display:block;
-    width:100%;
+    width:100vw;
     background-color: Rgb(34,49,62);
     height:120px;
     position: fixed;
