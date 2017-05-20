@@ -61,6 +61,7 @@ ul#navigatie {
     width: 100%;
     line-height:100px; 
     font-family: "tt_moons_thin_demoitalic";
+    transition: transform 0.5s ease;
 }
 
 #navigatie li a:hover{
