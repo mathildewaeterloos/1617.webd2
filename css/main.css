@@ -125,7 +125,7 @@ h2 {
 }
 
 .teamfotos{
-  font-family: "source sans pro";
+  font-family: "source sans pro", sans-serif;
   font-size: 20px;
   margin-top:20px;
 }
