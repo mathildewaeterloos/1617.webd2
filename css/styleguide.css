@@ -1,6 +1,4 @@
 /* 1. BASE: basisstijlen van de HTML-elementen */
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
 
 main.style-tile h1.style-tile,
 aside.style-tile h2.style-tile {
@@ -133,7 +131,7 @@ h6,
 }
 
 article > h1 {
-    font-family: 'Aliens and cows', sans-serif;
+    font-family: 'aliens_and_cowsregular', sans-serif;
     text-transform: uppercase;
     font-size: 50px;
 }
@@ -180,7 +178,7 @@ td > a:hover{
     padding: 0.25em 1em;
     text-decoration: none;
     font-size: 25px;
-    font-family: 'Aliens and cows';
+    font-family: 'aliens_and_cowsregular';
 
 }
 .button:hover {
@@ -240,7 +238,7 @@ ul#navigatie {
     float:left;
     display: block;
     /*font-family: 'Moons';*/
-    font-family:'TT Moons';
+    font-family:'tt_moons_thin_demoitalic';
     text-transform: uppercase;
     width:20%;
     
@@ -277,22 +275,4 @@ a.company_logo {
 a.company_logo:hover {
     background-image: url(../assets/images/logooblauw.svg);
 }
-
-/*footer*/
-
-#footer ul li{
-list-style-type: none;
-width: 430px;
-background-color: Rgb(34,49,62);
-height: 80px;
-display:block;
-float:left;
-text-align: center;
-font-family: 'source sans pro light', sans-serif;
-font-size: 15px;
-color: white;
-padding-top: 40px;
-margin-top: 50px;
-}
-
 
