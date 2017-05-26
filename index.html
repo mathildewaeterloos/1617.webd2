@@ -192,7 +192,7 @@
         <div class="grid__row rowform">
              <div class="grid__column-6 vraagform">
                 <p id="contactvraag">Heeft u een vraag? Aarzel niet om ons te contacteren!</p>
-                    <form class="form" action="http://example.com/subscribe.php" method="get">
+                    <form class="form" id="usrform" action="http://example.com/subscribe.php" method="get">
                         <p>Naam en familienaam:<br>
                         <input type="text" name="Naam en familienaam">
                         </p>
@@ -200,7 +200,7 @@
                         <input type="text" name="E-mailadres">
                         </p>
                         <p> Bericht:<br>
-                        <input id="inputbericht" type="text" name="E-mailadres">
+                        <textarea rows="5" cols="50" name="comment" form="usrform"></textarea>
                         </p>
                     </form>
                 <button class="buttonform" type="button"> Verzenden</button>
