@@ -106,7 +106,7 @@ h1 {
 
 h2 {
   font-size:30px;
-  font-family: 'source sans pro light',Sans-serif;
+  font-family: 'Source Sans Pro Light',Sans-serif;
   font-variant: small-caps;
   color:rgb(255,119,0);
   text-align:center; 
@@ -114,7 +114,7 @@ h2 {
 
 .tekstmidden  {
   text-align: center;
-  font-family: 'source sans pro',Sans-serif;
+  font-family: 'Source Sans Pro',Sans-serif;
   font-size:18px;
 }
 #tekstservice{
@@ -125,7 +125,7 @@ h2 {
 }
 
 .teamfotos{
-  font-family: "source sans pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   margin-top:20px;
 }
@@ -181,12 +181,12 @@ h2 {
   float:left;
   margin:0;
   text-align: center;
-  font-family: 'source sans pro',sans-serif;
+  font-family: 'Source Sans Pro',sans-serif;
   font-size:18px;
 }
 
 .vraagform {
-  font-family: 'source sans pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   float:left;
 }
 
@@ -262,7 +262,7 @@ h2 {
 }
 
 .tekstfooter, a{
-  font-family:"source sans pro",sans-serif ;
+  font-family:'Source Sans Pro',sans-serif ;
   text-align: center;
   color:white;
   text-decoration: underline;
@@ -299,7 +299,7 @@ footer > .tekstfooter > .grid__column-12 > .copyright {
 }
 
 .broodkruimelpad{
-   font-family: "source sans pro",sans-serif;
+   font-family: 'Source Sans Pro',sans-serif;
    font-variant: small-caps;
    font-size:18px;
    margin-left:90px;
@@ -321,7 +321,7 @@ footer > .tekstfooter > .grid__column-12 > .copyright {
 
 .detailswerk{
   text-align: center;
-  font-family: "source sans pro",sans-serif;
+  font-family: 'Source Sans Pro',sans-serif;
   font-size:20px;
 }
 
